@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# BOT-BATTLR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Your Bot Army, a React-based application that allows users to manage and recruit bots into their army. This application provides features like enlisting bots, releasing bots, discharging bots, sorting, and filtering by class.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+Follow these instructions to set up and run the application on your local machine.
 
-### `npm start`
+### Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone this repository to your local machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   git clone <https://github.com/damoxify/bot-battlr>
+   ```
 
-### `npm test`
+2. Change into the project directory:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   cd your-bot-battlr
+   ```
 
-### `npm run build`
+3. Install the required dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm install
+   ```
+### Starting the JSON Server
+To simulate a backend API for this application, we'll use JSON Server. Run the following command to start the JSON Server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+json-server --watch db.json --port 3000
+```
+### Running the Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To start the application, run the following command:
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This will start the development server, and you can access the application in your web browser at [http://localhost:3000](http://localhost:3001).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **View All Bots**: The `BotCollection` component displays a list of all available bots, including their details.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Recruit Bots**: Users can recruit bots into their army by clicking the "Recruit Army" button on a bot card in the `BotCollection`.
 
-## Learn More
+- **Release Bots**: Enlisted bots can be released from the army by clicking the "Release" button in the `YourBotArmy` section.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Discharge Bots**: To discharge a bot from service permanently, click the red "X" button in the `YourBotArmy`. This action removes the bot from both the frontend and the backend.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Sorting**: The `SortBar` component allows sorting bots by health, damage, or armor.
 
-### Code Splitting
+- **Filtering**: Users can filter bots by class (e.g., Support, Medic, etc.) by clicking the corresponding class filter buttons in the `BotCollection`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Bot Details**: Clicking on a bot card in the `BotCollection` displays detailed bot information in the `BotSpecs` component. Users can enlist the bot from there.
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If you'd like to contribute to this project, please follow these guidelines:
 
-### Making a Progressive Web App
+1. Fork the repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Create a new branch for your feature or bug fix.
 
-### Advanced Configuration
+3. Make your changes and ensure the code style follows the project's conventions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. Test your changes thoroughly.
 
-### Deployment
+5. Create a pull request with a clear description of the changes and why they are necessary.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+
+- Thanks to the React community for creating an amazing library.
+- Special thanks to [Adedamola] for their contributions.
+
+Enjoy managing your bot army!
+```
