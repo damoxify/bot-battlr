@@ -11,7 +11,7 @@ Follow these instructions to set up and run the application on your local machin
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone <https://github.com/damoxify/bot-battlr>
+   git clone https://github.com/damoxify/bot-battlr
    ```
 
 2. Change into the project directory:
@@ -78,7 +78,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - Thanks to the React community for creating an amazing library.
-- Special thanks to [Adedamola] for their contributions.
 
 Enjoy managing your bot army!
 ```
